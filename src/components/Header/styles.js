@@ -15,6 +15,10 @@ export const Text = styled.h1`
   font-weight: 700;
   color: #fff;
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
 `;
 
 export const BiggerText = styled.h1`
@@ -27,9 +31,9 @@ export const BiggerText = styled.h1`
 export const Apresentation = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
-  margin-top: 250px;
+  margin-top: 120px;
 `;
 
 export const ScheduleArea = styled.div`

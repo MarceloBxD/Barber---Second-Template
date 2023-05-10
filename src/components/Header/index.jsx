@@ -1,15 +1,11 @@
-import {
-  HeaderContainer,
-  Text,
-  Apresentation,
-  ScheduleArea,
-  ScheduleItem,
-  BiggerText,
-} from "./styles";
+import { HeaderContainer, Text, Apresentation, BiggerText } from "./styles";
 import img from "../../assets/images/header.jpg";
 import Navbar from "../Navbar";
 import Button from "../Button";
 import { HamburgerMenu } from "../Navbar/styles";
+// import Animation from "../Animation";
+import Schedules from "../Schedules";
+import ImpressionsSlider from "../ImpressionsSlider";
 
 export default () => {
   return (
@@ -34,26 +30,16 @@ export default () => {
         <HamburgerMenu />
       </div>
       <Apresentation>
-        <Text>Fazemos sua barba de maneira clássica:</Text>
-        <BiggerText>com navalha e toalha quente</BiggerText>
+        <BiggerText>Fazemos sua barba de maneira clássica:</BiggerText>
+        <Text>com navalha e toalha quente</Text>
         <Button />
       </Apresentation>
       <Apresentation>
-        <ScheduleArea>
-          <ScheduleItem>
-            Horário de Funcionamento
-            <Button />
-          </ScheduleItem>
-          <ScheduleItem>
-            Preços
-            <Button />
-          </ScheduleItem>
-          <ScheduleItem>
-            Item
-            <Button />
-          </ScheduleItem>
-        </ScheduleArea>
+        <Text>Impressões</Text>
+        <ImpressionsSlider />
       </Apresentation>
+      {/* <Animation /> */}
+      <Schedules />
     </HeaderContainer>
   );
 };
